@@ -86,10 +86,10 @@
 
     <section class="about-me vh-100 d-flex justify-content-center align-items-center animate-on-scroll flex-row"
         id="about-me">
-        <div class="container text-center">
-            <div class="d-flex flex-row g-0 align-items-center justify-content-center g-5">
+        <div class="container ">
+            <div class="d-flex flex-row  align-items-center justify-content-center g-5">
                 <div class="col-md-4">
-                    <h2 class="fs-1 mb-3 text-center">Něco o mně</h2>
+                    <h2 class="fs-1 mb-3">Něco o mně</h2>
                     <p>Ahoj, jmenuji se Valentýna Salátková a fotografii se věnuji od roku 2020.</p>
                     <p>Focení pro mě není jen o krásných snímcích, ale o celém zážitku. Chci zachytit opravdové emoce,
                         atmosféru a jedinečné momenty tak, aby ve vás i po letech vyvolaly stejné pocity. Každá
@@ -97,7 +97,7 @@
                         by měla být nejen vzpomínkou, ale i příběhem, který stojí za to vyprávět.</p>
                 </div>
 
-                <img src="./photos/salivali.jpg" class="img-fluid w-25" style="border-radius: 10px;"
+                <img src="./photos/salivali.jpg" class="img-fluid w-25 ms-4" style="border-radius: 10px;"
                     alt="About Me Photo">
 
             </div>
@@ -186,7 +186,7 @@
                     const photoDiv = document.createElement('div');
                     photoDiv.className = 'col-md-3 align-items-center d-flex justify-content-center';
                     photoDiv.innerHTML = `
-                        <img src="./photos/${folder}/photo${i}.jpg" class="img-fluid mb-3 photo-thumbnail" alt="Photo ${i}">
+                        <img src="photos/${folder}/photo${i}.jpg" class="img-fluid mb-3 photo-thumbnail" alt="Photo ${i}">
                     `;
                     galleryElement.appendChild(photoDiv);
                 }
